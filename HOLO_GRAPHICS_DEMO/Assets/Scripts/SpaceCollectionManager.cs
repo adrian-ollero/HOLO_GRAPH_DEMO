@@ -117,6 +117,8 @@ public class SpaceCollectionManager : Singleton<SpaceCollectionManager>
             //Vector3 finalPosition = AdjustPositionWithSpatialMap(position, surfaceType);
             GameObject spaceObject = Instantiate(item, position, rotation) as GameObject;
             spaceObject.transform.parent = gameObject.transform;
+            if (spaceObjects.Count == 1)
+                spaceObject.SendMessage("OnSelect");
         }
     }    
 

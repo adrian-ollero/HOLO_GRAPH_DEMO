@@ -90,6 +90,9 @@ public class Placeable : MonoBehaviour
     // The location at which the object will be placed.
     private Vector3 targetPosition;
 
+    /////////////// MINE ////////////////
+    private bool IsPlaced { get; set; }
+
     /// <summary>
     /// Called when the GameObject is created.
     /// </summary>
@@ -117,6 +120,9 @@ public class Placeable : MonoBehaviour
         shadowAsset = GameObject.CreatePrimitive(PrimitiveType.Quad);
         shadowAsset.transform.parent = gameObject.transform;
         shadowAsset.SetActive(false);
+
+        // The object is not placed in the final position
+        IsPlaced = false;
     }
 
     /// <summary>
@@ -127,7 +133,7 @@ public class Placeable : MonoBehaviour
     {
         /* TODO: 4.a CODE ALONG 4.a */
 
-        if (!IsPlacing)
+        if (!IsPlacing && !IsPlaced)
         {
             OnPlacementStart();
         }
@@ -574,5 +580,13 @@ public class Placeable : MonoBehaviour
         boundsAsset = null;
         Destroy(shadowAsset);
         shadowAsset = null;
+    }
+
+    /// <summary>
+    /// Set to true when the button of start game is selected
+    /// </summary>
+    public void FixPosition()
+    {
+        IsPlaced = true;
     }
 }
