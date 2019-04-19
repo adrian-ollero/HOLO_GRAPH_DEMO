@@ -91,7 +91,7 @@ public class Placeable : MonoBehaviour
     private Vector3 targetPosition;
 
     /////////////// MINE ////////////////
-    private bool IsPlaced { get; set; }
+    public bool IsPlaced { get; set; }
 
     /// <summary>
     /// Called when the GameObject is created.
@@ -589,5 +589,6 @@ public class Placeable : MonoBehaviour
     {
         IsPlaced = true;
         GetComponent<BoxCollider>().enabled = false;
+        transform.Find("Wall").gameObject?.SetActive(true);
     }
 }
