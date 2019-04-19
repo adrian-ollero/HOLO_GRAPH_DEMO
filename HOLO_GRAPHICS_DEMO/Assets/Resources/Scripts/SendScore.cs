@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SendScore : MonoBehaviour
 {
-    void OnTriggerEnter(Collider otherObject)
+    void OnTriggerEnter(Collider c)
 
     {
 
-        Debug.Log("Ha entrado " + otherObject.gameObject.name);
+        Debug.Log("Ha entrado " + c.gameObject.name);
 
     }
 }
