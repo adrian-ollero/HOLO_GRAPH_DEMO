@@ -588,5 +588,6 @@ public class Placeable : MonoBehaviour
     public void FixPosition()
     {
         IsPlaced = true;
+        GetComponent<BoxCollider>().enabled = false;
     }
 }
