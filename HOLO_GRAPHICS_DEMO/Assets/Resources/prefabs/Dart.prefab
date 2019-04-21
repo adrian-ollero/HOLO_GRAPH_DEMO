@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3908479236482984690
+--- !u!1 &54
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3348670506777634673}
-  - component: {fileID: 2378333697032666701}
-  - component: {fileID: 7537284361962506044}
-  - component: {fileID: 5547460931796256394}
+  - component: {fileID: 72}
+  - component: {fileID: 109}
+  - component: {fileID: 87}
+  - component: {fileID: 120}
   m_Layer: 0
   m_Name: Dart
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3348670506777634673
+--- !u!4 &72
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3908479236482984690}
+  m_GameObject: {fileID: 54}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +34,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2378333697032666701
+--- !u!136 &109
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3908479236482984690}
+  m_GameObject: {fileID: 54}
   m_Material: {fileID: 13400000, guid: b2f1dcc4b923b5f46a1dd82622bde482, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -48,13 +48,13 @@ CapsuleCollider:
   m_Height: 0.115
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7537284361962506044
+--- !u!54 &87
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3908479236482984690}
+  m_GameObject: {fileID: 54}
   serializedVersion: 2
   m_Mass: 0.05
   m_Drag: 0
@@ -64,13 +64,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5547460931796256394
+--- !u!114 &120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3908479236482984690}
+  m_GameObject: {fileID: 54}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6f821a7ed2f87b48b6acd982d9e7137, type: 3}
@@ -81,7 +81,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3348670506777634673}
+    m_TransformParent: {fileID: 72}
     m_Modifications:
     - target: {fileID: 100000, guid: fafe2ec9539994d439813bf7a0aebbab, type: 3}
       propertyPath: m_Name

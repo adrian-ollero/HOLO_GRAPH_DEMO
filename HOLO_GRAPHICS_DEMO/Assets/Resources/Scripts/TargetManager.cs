@@ -7,8 +7,7 @@ using System;
 public class TargetManager : MonoBehaviour
 {
     public TextMesh grollars_score;
-    public Text winner_text;
-
+ 
     public void SendScore(string name)
     {
         Debug.Log("Collision: "+ name);

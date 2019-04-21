@@ -9,6 +9,8 @@ public class FixPlacementManagement : MonoBehaviour
 
     public GameObject Background;
 
+    public GameObject Grollars;
+
 
     private Color defaultColor;
     private Renderer background_render;
@@ -23,6 +25,7 @@ public class FixPlacementManagement : MonoBehaviour
     {
         // Call the FixPlace fucntions in the father 
         Target.FixPosition();
+        Grollars.SetActive(true);
         // Destroy this gameobject
         Destroy(transform.gameObject);
     }
