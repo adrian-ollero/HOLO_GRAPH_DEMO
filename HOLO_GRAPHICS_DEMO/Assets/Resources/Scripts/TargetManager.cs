@@ -10,7 +10,6 @@ public class TargetManager : MonoBehaviour
  
     public void SendScore(string name)
     {
-        Debug.Log("Collision: "+ name);
         int score = Convert.ToInt32(name) + Convert.ToInt32(grollars_score.text);
         grollars_score.text = "" + score;
     }
